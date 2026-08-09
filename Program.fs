@@ -1,2 +1,0 @@
-module Program
-printfn "Hi"
