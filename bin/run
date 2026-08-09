@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+./bin/build
+
+export PATH="$HOME/.dotnet:$PATH"
+dotnet restore output/Main/Program.fsproj --force-evaluate --nologo -v q
+dotnet build output/Main/Program.fsproj --nologo -v q -clp:NoSummary
+dotnet run --no-build --project output/Main/Program.fsproj

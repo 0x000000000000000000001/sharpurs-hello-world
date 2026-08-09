@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
+spago build
+
+node ../sharpurs/bin/sharpurs.js --main Main
