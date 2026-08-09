@@ -1,0 +1,5 @@
+output/
+.spago/
+obj/
+bin/
+node_modules/

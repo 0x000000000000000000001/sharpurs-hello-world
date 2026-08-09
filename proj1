@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <WarningsAsErrors>false</WarningsAsErrors>
+    <NoWarn>40,25,46,66,67,3370</NoWarn>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="FFI.CSharp.csproj" />
+    <Compile Include="Sharpurs_Prelude.fs" />
+    <Compile Include="Control.Semigroupoid.fs" />
+    <Compile Include="Control.Category.fs" />
+    <Compile Include="Data.Boolean.fs" />
+    <Compile Include="Type.Proxy.fs" />
+    <Compile Include="Data.Symbol.fs" />
+    <Compile Include="Data.Unit.fs" />
+    <Compile Include="Record.Unsafe.fs" />
+    <Compile Include="Data.HeytingAlgebra.fs" />
+    <Compile Include="Data.Void.fs" />
+    <Compile Include="Data.Eq.fs" />
+    <Compile Include="Data.Semigroup.fs" />
+    <Compile Include="Data.Show.fs" />
+    <Compile Include="Data.Ordering.fs" />
+    <Compile Include="Data.Semiring.fs" />
+    <Compile Include="Data.Ring.fs" />
+    <Compile Include="Data.Ord.fs" />
+    <Compile Include="Data.Function.fs" />
+    <Compile Include="Data.Functor.fs" />
+    <Compile Include="Control.Apply.fs" />
+    <Compile Include="Control.Applicative.fs" />
+    <Compile Include="Control.Bind.fs" />
+    <Compile Include="Control.Monad.fs" />
+    <Compile Include="Data.BooleanAlgebra.fs" />
+    <Compile Include="Data.Bounded.fs" />
+    <Compile Include="Data.Generic.Rep.fs" />
+    <Compile Include="Data.Bounded.Generic.fs" />
+    <Compile Include="Data.CommutativeRing.fs" />
+    <Compile Include="Data.EuclideanRing.fs" />
+    <Compile Include="Data.DivisionRing.fs" />
+    <Compile Include="Data.Field.fs" />
+    <Compile Include="Data.Monoid.fs" />
+    <Compile Include="Data.NaturalTransformation.fs" />
+    <Compile Include="Prelude.fs" />
+    <Compile Include="Data.Eq.Generic.fs" />
+    <Compile Include="Data.HeytingAlgebra.Generic.fs" />
+    <Compile Include="Data.Monoid.Additive.fs" />
+    <Compile Include="Data.Monoid.Conj.fs" />
+    <Compile Include="Data.Monoid.Disj.fs" />
+    <Compile Include="Data.Monoid.Dual.fs" />
+    <Compile Include="Data.Monoid.Endo.fs" />
+    <Compile Include="Data.Monoid.Generic.fs" />
+    <Compile Include="Data.Monoid.Multiplicative.fs" />
+    <Compile Include="Data.Ord.Generic.fs" />
+    <Compile Include="Data.Reflectable.fs" />
+    <Compile Include="Data.Ring.Generic.fs" />
+    <Compile Include="Data.Semigroup.First.fs" />
+    <Compile Include="Data.Semigroup.Generic.fs" />
+    <Compile Include="Data.Semigroup.Last.fs" />
+    <Compile Include="Data.Semiring.Generic.fs" />
+    <Compile Include="Data.Show.Generic.fs" />
+    <Compile Include="Effect.fs" />
+    <Compile Include="Effect.Class.fs" />
+    <Compile Include="Effect.Console.fs" />
+    <Compile Include="Effect.Class.Console.fs" />
+    <Compile Include="Effect.Uncurried.fs" />
+    <Compile Include="Effect.Unsafe.fs" />
+    <Compile Include="HelloCs.fs" />
+    <Compile Include="HelloFs.fs" />
+    <Compile Include="HelloMixed.fs" />
+    <Compile Include="Main.fs" />
+    <Compile Include="Spago.Generated.BuildInfo.fs" />
+    <Compile Include="EntryPoint.fs" />
+  </ItemGroup>
+</Project>
