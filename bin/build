@@ -3,4 +3,4 @@ set -e
 
 spago build
 
-node ../sharpurs/bin/sharpurs.js --main Main
+../sharpurs/bin/sharpurs --main Main
